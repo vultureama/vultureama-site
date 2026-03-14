@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio - VULTURE'S Site</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .portfolio-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin: 30px 0;
+        }
+        .portfolio-item {
+            background: rgba(0,0,0,0.5);
+            border-radius: 20px;
+            padding: 20px;
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border: 2px solid #ff69b4;
+        }
+        .portfolio-item:hover {
+            transform: scale(1.02);
+            box-shadow: 0 0 25px #ff69b4;
+        }
+        .portfolio-thumb {
+            width: 100%;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 15px;
+            border: 3px solid #00ff00;
+            cursor: pointer;
+            transition: opacity 0.2s;
+        }
+        .portfolio-thumb:hover {
+            opacity: 0.9;
+        }
+        .portfolio-title {
+            color: #ff69b4;
+            font-size: 1.4rem;
+            margin: 15px 0 5px;
+            font-family: 'Alice', serif;
+        }
+        .portfolio-desc {
+            color: white;
+            font-size: 1rem;
+            margin-bottom: 10px;
+        }
+        .enlarge-hint {
+            color: #00ff00;
+            font-size: 0.9rem;
+            margin-top: 5px;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="paper">
+        <header>
+            <h1>Volunteer Work & Portfolio</h1>
+            <div class="email-header">
+                <a href="mailto:mailto:vultureama@gmail.com?subject=Job%20Opportunity&body=Hi%20Vulture%2C%20I%20came%20across%20your%20site%20and%20">vultureama@gmail.com</a>
+            </div>
+        </header>
+
+        <!-- Note about bachelor's degree -->
+        <div style="color: white; text-align: center; margin-bottom: 30px; padding: 15px; background: rgba(255,105,180,0.1); border-radius: 10px; border: 1px solid #ff69b4;">
+            <p style="font-size: 1.1rem;">🎓 <strong>1 class remaining</strong> for Bachelor's in Information Systems (planning to re-enroll)</p>
+            <p style="font-size: 0.95rem; margin-top: 5px;">Associate of Science in Business, Accounting earned at Western Nevada College (3.8 GPA)</p>
+        </div>
+
+        <div class="portfolio-grid">
+            <!-- Example1 (Canva work for Linda Cox) -->
+            <div class="portfolio-item">
+                <a href="./images/example1-full.jpg" target="_blank">
+                    <img src="./images/example1-thumb.jpg" alt="Canva Design 1" class="portfolio-thumb">
+                </a>
+                <div class="portfolio-title">Canva Design 1</div>
+                <div class="portfolio-desc">Linda Cox Consulting project</div>
+                <div class="enlarge-hint">click to enlarge</div>
+            </div>
+
+            <!-- Example2 -->
+            <div class="portfolio-item">
+                <a href="./images/example2-full.jpg" target="_blank">
+                    <img src="./images/example2-thumb.jpg" alt="Canva Design 2" class="portfolio-thumb">
+                </a>
+                <div class="portfolio-title">Canva Design 2</div>
+                <div class="portfolio-desc">Linda Cox Consulting project</div>
+                <div class="enlarge-hint">click to enlarge</div>
+            </div>
+
+            <!-- Example3 -->
+            <div class="portfolio-item">
+                <a href="./images/example3-full.jpg" target="_blank">
+                    <img src="./images/example3-thumb.jpg" alt="Canva Design 3" class="portfolio-thumb">
+                </a>
+                <div class="portfolio-title">Canva Design 3</div>
+                <div class="portfolio-desc">Linda Cox Consulting project</div>
+                <div class="enlarge-hint">click to enlarge</div>
+            </div>
+
+            <!-- Simple Email Newsletter Example -->
+            <div class="portfolio-item">
+                <a href="./images/simple-email-newsletter-example-full.jpg" target="_blank">
+                    <img src="./images/simple-email-newsletter-example-thumb.jpg" alt="Email Newsletter" class="portfolio-thumb">
+                </a>
+                <div class="portfolio-title">Email Newsletter</div>
+                <div class="portfolio-desc">Linda Cox Consulting – SIFMA Foundation</div>
+                <div class="enlarge-hint">click to enlarge</div>
+            </div>
+
+            <!-- Associate Diploma (Business, Accounting) -->
+            <div class="portfolio-item">
+                <a href="./images/diploma-full.png" target="_blank">
+                    <img src="./images/diploma-thumb.png" alt="Associate Diploma" class="portfolio-thumb">
+                </a>
+                <div class="portfolio-title">Associate Degree</div>
+                <div class="portfolio-desc">Business, Accounting – Western Nevada College</div>
+                <div class="enlarge-hint">click to enlarge</div>
+            </div>
+
+            <!-- Dean's List Letter -->
+            <div class="portfolio-item">
+                <a href="./images/deans-list-full.jpg" target="_blank">
+                    <img src="./images/deans-list-thumb.jpg" alt="Dean's List Letter" class="portfolio-thumb">
+                </a>
+                <div class="portfolio-title">Dean's List</div>
+                <div class="portfolio-desc">Western Nevada College – Honor Student</div>
+                <div class="enlarge-hint">click to enlarge</div>
+            </div>
+        </div>
+
+        <!-- Wix Experience -->
+        <div class="cover-box" style="margin-top: 20px;">
+            <h2 class="support-title" style="margin-top: 0;">Wix Experience</h2>
+            <div class="letter-content">
+                <p>I have experience building and designing websites using HTML/CSS, WordPress and Wix, including custom layouts, organized content, and cohesive brand design.</p>
+            </div>
+        </div>
+
+        <!-- NEW: Community Volunteering & Donations -->
+        <div class="cover-box" style="margin-top: 20px;">
+            <h2 class="support-title" style="margin-top: 0;">Community Stewardship</h2>
+            <div class="letter-content">
+              <p style="margin-top: 15px; text-align: center; font-style: italic; color: #ff69b4;">Proud to spend my time outside of work helping others.</p>
+                <p><strong>Nevada Humane Society:</strong> 62 hours as a dog walker/hiker. Also donated Amazon Fire tablets to staff to help make the adoption process smoother for families.</p>
+                <p><strong>St. Vincent's Dining Hall: </strong>260 hours over 2.5 years. When COVID hit and they couldn't serve food inside, I helped provide several thousand to go containers, cups, and some food so meals could still be served to people who were hungry during the pandemic.</p>
+                
+            </div>
+        </div>
+
+        <div class="nav-buttons">
+            <a href="index.html" class="nav-btn">← Back to Home</a>
+            <a href="coverletter.html" class="nav-btn">Coverletter →</a>
+        </div>
+
+        <div class="thank-you">
+            thank you ♡
+        </div>
+    </div>
+</body>
+</html>
