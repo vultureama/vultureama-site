@@ -320,5 +320,15 @@ header h1 {
     }
     .signature-line {
         width: 180px;
+
+.terms-page .cover-box {
+    line-height: 1.9;
+    font-size: 1.05rem;
+}
+
+.terms-page h1 {
+    font-size: clamp(2rem, 6vw, 2.8rem);
+
+        
     }
 }
