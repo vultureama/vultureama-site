@@ -1,20 +1,24 @@
 @import url('https://fonts.googleapis.com/css2?family=Alice&family=Dancing+Script&display=swap');
 
+/* RESET */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+/* BODY */
 body {
     font-family: 'Alice', serif;
     min-height: 100vh;
     display: flex;
     justify-content: center;
-    align-items: center;
-    padding: 20px;
+    align-items: flex-start;
+    padding: 30px 15px;
     background-color: #0a0a0a;
+    color: white;
 
+    /* SCATTERED GLITTER */
     background-image:
         radial-gradient(circle at 12% 18%, rgba(255,255,255,0.15) 1px, transparent 2px),
         radial-gradient(circle at 78% 22%, rgba(255,255,255,0.12) 1.5px, transparent 3px),
@@ -24,28 +28,31 @@ body {
         radial-gradient(circle at 5% 60%, rgba(255,255,255,0.1) 1.5px, transparent 3px),
         radial-gradient(circle at 50% 10%, rgba(255,255,255,0.12) 1px, transparent 2px);
 
-    background-size: 300px 300px;
+    background-size: 320px 320px;
 }
 
+/* MAIN CARD */
 .paper {
-    max-width: 800px;
+    max-width: 900px;
     width: 100%;
-    background-color: rgba(0,0,0,0.35);
-    padding: 30px 20px;
+    background: rgba(0, 0, 0, 0.45);
+    padding: 35px 25px;
     border-radius: 20px;
 }
 
+/* HEADER */
 header {
-    margin-bottom: 30px;
-    padding-bottom: 15px;
-    border-bottom: 3px solid #ff69b4;
     text-align: center;
+    margin-bottom: 30px;
+    border-bottom: 3px solid #ff69b4;
+    padding-bottom: 15px;
 }
 
 header h1 {
     color: #ff69b4;
-    font-size: clamp(2rem, 6vw, 2.8rem);
-    text-shadow: 0 0 10px rgba(255,105,180,0.4);
+    font-size: clamp(2rem, 5vw, 2.8rem);
+    letter-spacing: 2px;
+    text-shadow: 0 0 12px rgba(255,105,180,0.5);
 }
 
 /* CONTRACT BOX */
@@ -53,23 +60,25 @@ header h1 {
     border: 3px solid #ff69b4;
     border-radius: 30px 10px 30px 10px;
     padding: 30px;
-    color: white;
-    background-color: #000000;
+    background: #000;
     box-shadow: 0 0 25px #ff69b4;
 }
 
-/* BIGGER TEXT (VERY NOTICEABLE) */
-.terms-page .cover-box p {
-    font-size: 1.2rem;
-    line-height: 2;
-    margin-bottom: 22px;
+/* INTRO */
+.intro {
+    font-size: clamp(1.2rem, 2.5vw, 1.3rem);
+    margin-bottom: 25px;
 }
 
-/* VERY GLOWY GREEN NUMBERS */
-.section-number {
+/* SECTION HEADINGS (NUMBER + TITLE) */
+.section-heading {
     color: #00ff00;
     font-weight: 900;
-    font-size: 1.6rem;
+
+    font-size: clamp(1.8rem, 4vw, 2.4rem);
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 
     text-shadow:
         0 0 5px #00ff00,
@@ -78,11 +87,43 @@ header h1 {
         0 0 40px #00ff00;
 }
 
-/* thank you */
+/* NUMBER SPACING */
+.section-number {
+    margin-right: 8px;
+}
+
+/* BODY TEXT */
+.section-text {
+    font-size: clamp(1.15rem, 2.5vw, 1.3rem);
+    line-height: 2;
+    color: white;
+    margin-bottom: 10px;
+}
+
+/* THANK YOU */
 .thank-you {
     color: #ff69b4;
     font-family: 'Dancing Script', cursive;
-    font-size: 2.5rem;
+    font-size: clamp(2rem, 5vw, 2.8rem);
     text-align: center;
-    margin-top: 20px;
+    margin-top: 25px;
+}
+
+/* MOBILE TUNING */
+@media (max-width: 600px) {
+    .paper {
+        padding: 25px 15px;
+    }
+
+    .cover-box {
+        padding: 20px;
+    }
+
+    .section-heading {
+        font-size: 1.6rem;
+    }
+
+    .section-text {
+        font-size: 1.05rem;
+    }
 }
